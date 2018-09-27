@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Tickets</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <nav class="main_navigation">
+            <ul class="first_navigation">
+                <li style="margin-left: 0px"><a href="#">чартеры</a></li>
+                <li><a href="#">покупка/продажа</a></li>
+                <li><a href="#">менеджмент вс</a></li>
+                <li><a href="#">авиационный консалтинг</a></li>
+                <li><a href="#">услуги</a></li>
+                <li><a href="#">о компании</a></li>
+                <li><a href="#">контакты</a></li>
+                <li><a href="#">en</a></li>
+            </ul>
+            <ul class="second_navigation">
+                <li id="first-element"><a href="#">бизнес чартеры</a></li>
+                <li><a href="#">групповые чартеры</a></li>
+                <li><a href="#">грузовые чартеры</a></li>
+                <li><a href="#">медецинские чартеры</a></li>
+                <li><a href="#">empty legs</a></li>
+                <li><a href="#">вертолеты</a></li>
+            </ul>
+        </nav>
+        <section class="main-content">
+            <h4>рейсы empty legs</h4>
+            <div class="quote">
+                <hr class="quote-line" color="#555555" style=" height: 1px">
+                <blockquote >
+                    <p>Когда компания Company организует чартерный перелет в один конец, то зачастую самолет при возвращении на свою базу или при продолжении перелета в другое место летит пустым. Такие рейсы известны в нашем бизнесе как "Empty Legs" </p>
+                    <div class="quote-link">
+                        <a href="#">актуальные рейсы</a>
+                        <i class="fas fa-caret-right"></i>
+                    </div>
+                </blockquote>
+            </div>
+            <div class="main-content-header">
+                <p>Ниже приведен список Empty Legs, актуальных на текущий момент. Для получения информации выберите мышкой понравившийся Empty Leg или же подпишитесь на информационную рассылку и получайте каждую неделю электронную почту с кратким обзором всех Empty Legs, появившихся за последние 7 дней.</p>
+
+                <p>Этот список, конечно, не является исчерпывающим, поэтому, если вы не находите подходящего Empty Leg на этой странице, свяжитесь с нашими специалистами напрямую и передайте им информацию о ваших регулярных маршрутах. Мы свяжемся с вами, как только какой-либо из ваших маршрутов станет доступен.</p>
+
+                <p>Ниже приведен список Empty Legs, актуальных на текущий момент. Для получения информации выберите мышкой понравившийся Empty Leg или же подпишитесь на информационную рассылку и получайте каждую неделю электронную почту с кратким обзором всех Empty Legs, появившихся за последние 7 дней</p>
+            </div>
+        </section>
+    </div>
+</header>
+<main class="main">
+    <div class="box">
+        <div class="box-content">
+            <div class="box-case">
+                <img src="images/01.png" alt="first-img">
+                <div class="first-box">
+                    <h4>большая экономия</h4>
+                    <p>Ваша экономия до 75% от стоимости обычного чартера</p>
+                </div>
+            </div>
+            <div class="box-case">
+                <img src="images/02.png" alt="second-img">
+                <div class="second-box">
+                    <h4>широкий выбор</h4>
+                    <p>Empty legs - широкий спектр частных воздушных судов</p>
+                </div>
+            </div>
+            <div class="box-case">
+                <img src="images/03.png" alt="third-img">
+                <div class="third-box">
+                    <h4>актуальная информация</h4>
+                    <p>Информация регулярно обновляется на нашем сайте</p>
+                </div>
+            </div>
+            <div class="box-case" style="margin-right: 0px">
+                <img src="images/04.png" alt="fourth-img">
+                <div class="fourth-box">
+                    <h4>оповещание клиентов</h4>
+                    <p>Наши специалисты оповестят вас как только появится ваш маршрут</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flight-box">
+        <div class="shedule">
+            <div class="actual-flight">
+                <h4>актуальные рейсы</h4>
+                <hr align="left"   style="height: 25px; width: 1px"/>
+                <h2>расписание</h2>
+                <div class="font-awesome">
+                    <i class="fas fa-caret-down fa-5x" style="color: #a7d9db"></i>
+                </div>
+            </div>
+            <div class="shedule-border">
+                <div class="table-wrap">
+                    <table class="table">
+                        <thead>
+                        <th class="cities">empty legs</th>
+                        <th class="dates-of-flight">дата вылета</th>
+                        <th class="plane">самолет</th>
+                        <th>заказ</th>
+                        </thead>
+                        <tbody>
+                        <tr
+                                id="flight-1"
+                                onclick="javascript: show_popup('flight-1');"
+                                data-flight-id="123456"
+                                data-flight-from="Los Angeles"
+                                data-flight-to="Teterboro"
+                                data-flight-jet-type="Lear Jet 45 X"
+                                data-flight-date="28.02.2018"
+                        >
+                            <td class="cities"><a href="#">Los Angeles - Teterboro</a></td>
+                            <td class="dates-of-flight"><a href="#"> 28 февраля 2018года</a></td>
+                            <td class="plane"><a href="#"> Lear Jet 45 XR</a></td>
+                            <td class="order" ><a href="#"> ЗАКАЗАТЬ РЕЙС</a></td>
+                        </tr>
+
+                        <tr
+                                id="flight-2"
+                                onclick="javascript: show_popup('flight-2');"
+                                data-flight-id="123456"
+                                data-flight-from="Boca-Raton"
+                                data-flight-to="West Chicago"
+                                data-flight-jet-type="Lear Jet 40"
+                                data-flight-date="28.02.2018"
+                        >
+                            <td class="cities"><a href="#">Boca-Raton - West Chicago</a></td>
+                            <td class="dates-of-flight"><a href="#">28 февраля 2018года</a></td>
+                            <td class="plane"><a href="#">Lear Jet 40</a></td>
+                            <td class="order"><a href="#">ЗАКАЗАТЬ РЕЙС</a></td>
+                        </tr>
+                        <tr
+                                id="flight-3"
+                                onclick="javascript: show_popup('flight-3');"
+                                data-flight-id="123456"
+                                data-flight-from="Los Angeles"
+                                data-flight-to="Teterboro"
+                                data-flight-jet-type="Lear Jet 40"
+                                data-flight-date="28.02.2018"
+                        >
+                            <td class="cities"><a href="#">Los Angeles - Teterboro</a></td>
+                            <td class="dates-of-flight"><a href="#">28 февраля 2018года</a></td>
+                            <td class="plane"><a href="#">Lear Jet 60 XR</a></td>
+                            <td class="order"><a href="#">ЗАКАЗАТЬ РЕЙС</a></td>
+                        </tr>
+                        <tr
+                                id="flight-4"
+                                onclick="javascript: show_popup('flight-4');"
+                                data-flight-id="123456"
+                                data-flight-from="Boca-Raton"
+                                data-flight-to="West Chicago"
+                                data-flight-jet-type="Global 5000"
+                                data-flight-date="1.03.2018"
+                        >
+                            <td class="cities"><a href="#">Boca-Raton - West Chicago</a></td>
+                            <td class="dates-of-flight"><a href="#">01 марта 2018года</a></td>
+                            <td class="plane"><a href="#">Global 5000</a></td>
+                            <td class="order"><a href="#">ЗАКАЗАТЬ РЕЙС</a></td>
+                        </tr>
+                        <tr
+                                id="flight-5"
+                                onclick="javascript: show_popup('flight-5');"
+                                data-flight-id="123456"
+                                data-flight-from="Los Angeles"
+                                data-flight-to="Teterboro"
+                                data-flight-jet-type="Chellenger 300"
+                                data-flight-date="02.03.2018"
+                        >
+                            <td class="cities"><a href="#">Los Angeles - Teterboro</a></td>
+                            <td class="dates-of-flight"><a href="#">02 марта 2018года</a></td>
+                            <td class="plane"><a href="#">Chellenger 300</a></td>
+                            <td class="order"><a href="#">ЗАКАЗАТЬ РЕЙС</a></td>
+                        </tr>
+                        <tr
+                                id="flight-6"
+                                onclick="javascript: show_popup('flight-6');"
+                                data-flight-id="123456"
+                                data-flight-from="Boca-Raton"
+                                data-flight-to="West Chicago"
+                                data-flight-jet-type="Chellenger 850"
+                                data-flight-date="2.03.2018"
+                        >
+                            <td class="cities"><a href="#">Boca-Raton - West Chicago</a></td>
+                            <td class="dates-of-flight"><a href="#">02 марта 2018года</a></td>
+                            <td class="plane"><a href="#">Chellenger 850</a></td>
+                            <td class="order"><a href="#">ЗАКАЗАТЬ РЕЙС</a></td>
+                        </tr>
+                        <tr
+                                id="flight-7"
+                                onclick="javascript: show_popup('flight-7');"
+                                data-flight-id="123456"
+                                data-flight-from="Los Angeles"
+                                data-flight-to="Teterboro"
+                                data-flight-jet-type="P.180 Avanti II"
+                                data-flight-date="04.03.2018"
+                        >
+                            <td class="cities"><a href="#">Los Angeles - Teterboro</a></td>
+                            <td class="dates-of-flight"><a href="#">04 марта 2018года</a></td>
+                            <td class="plane"><a href="#">P.180 Avanti II</a></td>
+                            <td class="order"><a href="#">ЗАКАЗАТЬ РЕЙС</a></td>
+                        </tr>
+                        <tr
+                                id="flight-8"
+                                onclick="javascript: show_popup('flight-8');"
+                                data-flight-id="123456"
+                                data-flight-from="Boca-Raton"
+                                data-flight-to="West Chicago"
+                                data-flight-jet-type="Lear Jet 45 XR"
+                                data-flight-date="04.03.2018"
+                        >
+                            <td class="cities"><a href="#">Boca-Raton - West Chicago</a></td>
+                            <td class="dates-of-flight"><a href="#">04 марта 2018года</a></td>
+                            <td class="plane"><a href="#">Lear Jet 45 XR</a></td>
+                            <td class="order"><a href="#">ЗАКАЗАТЬ РЕЙС</a></td>
+                        </tr>
+                        <tr
+                                id="flight-9"
+                                onclick="javascript: show_popup('flight-9');"
+                                data-flight-id="123456"
+                                data-flight-from="Los Angeles"
+                                data-flight-to="Teterboro"
+                                data-flight-jet-type="Lear Jet 40"
+                                data-flight-date="05.03.2018"
+                        >
+                            <td class="cities"><a href="#">Los Angeles - Teterboro</a></td>
+                            <td class="dates-of-flight"><a href="#">05 марта 2018года</a></td>
+                            <td class="plane"><a href="#">Lear Jet 40</a></td>
+                            <td class="order"><a href="#">ЗАКАЗАТЬ РЕЙС</a></td>
+                        </tr>
+                        <tr
+                                id="flight-10"
+                                onclick="javascript: show_popup('flight-10');"
+                                data-flight-id="123456"
+                                data-flight-from="Boca-Raton"
+                                data-flight-to="West Chicago"
+                                data-flight-jet-type="Lear Jet 60 XR"
+                                data-flight-date="07.03.2018"
+                        >
+                            <td class="cities"><a href="#">Boca-Raton - West Chicago</a></td>
+                            <td class="dates-of-flight"><a href="#">07 марта 2018года</a></td>
+                            <td class="plane"><a href="#">Lear Jet 60 XR</a></td>
+                            <td class="order"><a href="#">ЗАКАЗАТЬ РЕЙС</a></td>
+                        </tr>
+                        <tr
+                                id="flight-11"
+                                onclick="javascript: show_popup('flight-11');"
+                                data-flight-id="123456"
+                                data-flight-from="Los Angeles"
+                                data-flight-to="Teterboro"
+                                data-flight-jet-type="Global 5000"
+                                data-flight-date="07.03.2018"
+                        >
+                            <td class="cities"><a href="#">Los Angeles - Teterboro</a></td>
+                            <td class="dates-of-flight"><a href="#">07 марта 2018года</a></td>
+                            <td class="plane"><a href="#">Global 5000</a></td>
+                            <td class="order"><a href="#">ЗАКАЗАТЬ РЕЙС</a></td>
+                        </tr>
+                        <tr
+                                id="flight-12"
+                                onclick="javascript: show_popup('flight-12');"
+                                data-flight-id="123456"
+                                data-flight-from="Boca-Raton"
+                                data-flight-to="West Chicago"
+                                data-flight-jet-type="Chellenger 300"
+                                data-flight-date="07.03.2018"
+                        >
+                            <td class="cities"><a href="#">Boca-Raton - West Chicago</a></td>
+                            <td class="dates-of-flight"><a href="#">07 марта 2018года</a></td>
+                            <td class="plane"><a href="#">Chellenger 300</a></td>
+                            <td class="order"><a href="#win">ЗАКАЗАТЬ РЕЙС</a></td>
+                        </tr>
+                        <tr
+                                id="flight-13"
+                                onclick="javascript: show_popup('flight-11');"
+                                data-flight-id="123456"
+                                data-flight-from="Los Angeles"
+                                data-flight-to="Teterboro"
+                                data-flight-jet-type="Chellenger 850"
+                                data-flight-date="09.03.2018"
+                        >
+                            <td class="cities"><a href="#">Los Angeles - Teterboro</a></td>
+                            <td class="dates-of-flight"><a href="#">09 марта 2018года</a></td>
+                            <td class="plane"><a href="#">Chellenger 850</a></td>
+                            <td class="order"><a href="#win">ЗАКАЗАТЬ РЕЙС</a></td>
+                        </tr>
+                        <tr
+                                id="flight-14"
+                                onclick="javascript: show_popup('flight-14');"
+                                data-flight-id="123456"
+                                data-flight-from="Boca-Raton"
+                                data-flight-to="West Chicago"
+                                data-flight-jet-type="P.180 Avanti II"
+                                data-flight-date="10.03.2018"
+                        >
+                            <td class="cities"><a href="#">Boca-Raton - West Chicago</a></td>
+                            <td class="dates-of-flight"><a href="#">10 марта 2018года</a></td>
+                            <td class="plane"><a href="#">P.180 Avanti II</a></td>
+                            <td class="order" onclick="myFunction()"><a href="#win14">ЗАКАЗАТЬ РЕЙС</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="btn-more-flights">
+                <a href="#"><span>еще рейсы</span><i class="fas fa-caret-right"></i></a>
+            </div>
+        </div>
+
+        <!-- pop-up-->
+
+        <div class="overlay" id="popup"></div>
+        <div class="popup">
+
+            <h3>Заказ рейса</h3>
+
+            <div class="popup-form">
+                <table class="popup-table">
+                    <tr>
+                        <td>Вылет из</td>
+                        <td id="flight-from-text"></td>
+                    </tr>
+                    <tr>
+                        <td>Прибытие в</td>
+                        <td id="flight-to-text"></td>
+                    </tr>
+                    <tr>
+                        <td>Дата вылета</td>
+                        <td id="flight-date-text"></td>
+                    </tr>
+                    <tr>
+                        <td>Модель самолета</td>
+                        <td id="flight-jet-type-text"></td>
+                    </tr>
+                </table>
+                <form id="popup-form" action="" method="POST">
+                    <input type="hidden" id="flight-id" name="flight_id" value="" />
+                    <input type="hidden" id="flight-from" name="flight_from" value="" />
+                    <input type="hidden" id="flight-to" name="flight_to" value="" />
+                    <input type="hidden" id="flight-jet-type" name="flight_jet_type" value="" />
+                    <input type="hidden" id="flight-date" name="flight_date" value="" />
+                    <input type="submit" value="Подтвердить заказ" />
+                </form>
+            </div>
+            <a class="close" title="Закрыть" href="#close" onclick="javascript: hide_popup();"></a>
+        </div>
+
+        <!-- pop-up-->
+
+    </div>
+</main>
+<footer class="footer">
+    <div class="box-footer">
+        <div class="call-us">
+            <h4>свяжитесь с нами</h4>
+            <hr align="left" width="1px" color="#464646" style="height: 15px"/>
+        </div>
+        <div class="contacts-content">
+            <div class="address-box-case">
+                <ul>
+                    <li id="address"><i class="fas fa-map-marker-alt"></i>адрес</li>
+                    <li>Киев,03115. Украина</li>
+                    <li>ул. Туполева, 18</li>
+                </ul>
+            </div>
+            <div class="numbers-box-case">
+                <ul>
+                    <li id="mobile"><i class="fas fa-mobile-alt"></i>телефон</li>
+                    <li>+38(044) 123-45-67</li>
+                    <li id="fax"><i class="fas fa-fax"></i>факс</li>
+                    <li>+38(044) 123-45-67</li>
+                </ul>
+            </div>
+            <div class="mail-box-case">
+                <ul>
+                    <li id="mail"><i class="far fa-envelope"></i>e-mail</li>
+                    <li>info@company.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copy">
+            <p>&copy; 2018</p>
+        </div>
+
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
